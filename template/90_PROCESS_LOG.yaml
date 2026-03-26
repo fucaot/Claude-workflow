@@ -1,0 +1,33 @@
+# 90_PROGRESS_LOG.yaml
+# 功能模块：{Feature Name}
+# 最后更新：{current_datetime}
+
+meta:
+  feature: {feature-name}
+  feature_name: "{Feature Name}"
+  current_phase: 1
+  status: wip
+  owner: "{请补充}"
+  started_at: {current_date}
+  last_updated: {current_datetime}
+
+# ============================================================
+# Claude Code 断点恢复信息
+# ============================================================
+cc_checkpoint:
+  session_id: "cc-{current_date}-{feature-name}"
+  last_file_edited: "agent_docs/features/{feature-name}/10_CONTEXT.md"
+  last_action: "创建功能目录和初始文档"
+  next_step: "补充 10_CONTEXT.md 中的功能描述和目标"
+  context_files:
+    - "agent_docs/features/{feature-name}/10_CONTEXT.md"
+    - "agent_docs/features/{feature-name}/90_PROGRESS_LOG.yaml"
+  edit_files:
+    - "{edit_file_path}"
+
+# ============================================================
+# 统计信息
+# ============================================================
+stats:
+  edit_files: 0
+  completion_rate: "0%"
