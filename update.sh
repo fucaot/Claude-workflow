@@ -85,7 +85,7 @@ update_category() {
                 mkdir -p "$backup_dir"
                 NEED_BACKUP=true
             fi
-            mkdir -p "$(dirname "$backup_dir/$label")"
+            mkdir -p "$backup_dir/$label"
             cp "$dst_file" "$backup_dir/$label/$fname"
             cp "$src_file" "$dst_file"
             echo -e "  ${YELLOW}~ ${fname}${NC} (updated, backup: $backup_dir)"
