@@ -21,3 +21,17 @@ OR run these commands in Claude Code:
 
 /omc-setup
 ```
+
+# Update
+
+Update workflow commands and templates to the latest version:
+
+```
+curl -sSL https://raw.githubusercontent.com/fucaot/Claude-workflow/main/update.sh | bash
+```
+
+Or in Claude Code:
+
+```
+/workflow-up
+```
