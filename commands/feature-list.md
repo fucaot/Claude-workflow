@@ -1,3 +1,9 @@
+---
+name: feature-list
+description: 查看功能列表
+model: haiku
+---
+
 # /feature-list - 查看功能列表
 
 ## 参数
